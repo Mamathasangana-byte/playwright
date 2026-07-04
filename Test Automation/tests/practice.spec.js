@@ -5,8 +5,11 @@ import data from '../data/testData.json';
 const today = new Date().toISOString().split('T')[0];
 
 test('practice demo' , async({page})=>{
+     await test.step('Open Login Page', async () => {
+        await page.goto('https://opencart.abstracta.us/index.php?route=account/login');
+    });
 
-    await page.goto('https://opencart.abstracta.us/index.php?route=account/login');
+    
 
     await page.waitForTimeout(5000);
 
