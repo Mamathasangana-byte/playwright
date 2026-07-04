@@ -16,6 +16,11 @@ test('practice demo' , async({page})=>{
     await page.locator('input[placeholder="E-Mail Address"]').fill(data.email);
      await page.waitForTimeout(5000);
 
+
+
+
+     
+
      await page.screenshot({path:`utils/screenshots/homepage_${today}.png`});
 
 
